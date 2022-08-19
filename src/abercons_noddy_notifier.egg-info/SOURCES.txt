@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/app.py
+src/abercons_noddy_notifier.egg-info/PKG-INFO
+src/abercons_noddy_notifier.egg-info/SOURCES.txt
+src/abercons_noddy_notifier.egg-info/dependency_links.txt
+src/abercons_noddy_notifier.egg-info/top_level.txt
