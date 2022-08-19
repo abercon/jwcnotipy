@@ -8,9 +8,9 @@ import sys
 from os import environ
 
 def notify_me_noddy(app_name, user_id):
-    
+
     def decorator(func):
-        
+
         @wraps(func)
         def wrapper(*args, **kwargs):
 
@@ -83,7 +83,7 @@ def notify_me_noddy(app_name, user_id):
                     ],
                     user_id
                 )
-                
+
             except Exception as e:
                 notify(
                     [
@@ -146,14 +146,13 @@ def notify_me_noddy(app_name, user_id):
             client = WebClient(bot_token)
             try:
                 response = client.chat_postEphemeral(
-                    user= "U037LP9TM5W",
-                    blocks=block,
-                    channel='C03UEUHV2H2'
+                    user = user_id,
+                    blocks = block,
+                    channel = environ['channel']
                 )
             except SlackApiError as e:
                 assert e.response["error"]
 
         return wrapper
     return decorator
-    
-    
+

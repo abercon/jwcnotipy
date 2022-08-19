@@ -1,6 +1,6 @@
 [build-system]
-requires = ["setuptools>=61.0", "slack_sdk"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling", "slack_sdk"]
+build-backend = "hatchling.build"
 
 [project]
 name = "abercons_noddy_notifier"
