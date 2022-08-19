@@ -148,7 +148,7 @@ def notify_me_noddy(app_name, user_id):
                 response = client.chat_postEphemeral(
                     user = user_id,
                     blocks = block,
-                    channel = environ['channel']
+                    channel = environ['CHANNEL']
                 )
             except SlackApiError as e:
                 assert e.response["error"]
