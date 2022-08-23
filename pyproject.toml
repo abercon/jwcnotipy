@@ -3,8 +3,8 @@ requires = ["hatchling", "slack_sdk"]
 build-backend = "hatchling.build"
 
 [project]
-name = "abercons_noddy_notifier"
-version = "0.0.3"
+name = "jwcnotipy"
+version = "0.0.1"
 authors = [
   { name="Joshua W-Christy", email="me@joshuawchristy.com" },
 ]
