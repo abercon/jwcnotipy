@@ -8,7 +8,7 @@ import sys
 from os import environ
 from math import floor
 
-from blocks import _success_message, _failure_message, _generic_message
+from .blocks import _success_message, _failure_message, _generic_message
 
 '''
 DESCRIPTION:s

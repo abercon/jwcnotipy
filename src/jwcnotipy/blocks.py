@@ -14,7 +14,7 @@ _generic_block(notification_name, time, payload):
     Generates the payload for a generic notification.
 '''
 
-def _success_block(
+def _success_message(
     notification_name,
     completion_time,
     elapsed_time,
@@ -102,7 +102,7 @@ def _success_block(
 
     return message
 
-def _failure_block(notification_name, failure_time, trace)->str:
+def _failure_message(notification_name, failure_time, trace)->str:
 
     '''
     DESCRIPTION:
@@ -173,7 +173,7 @@ def _failure_block(notification_name, failure_time, trace)->str:
 
     return message
 
-def _generic_block(notification_name, time, payload):
+def _generic_message(notification_name, time, payload):
 
     '''
     DESCRIPTION:
