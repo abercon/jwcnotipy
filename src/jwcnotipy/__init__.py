@@ -1,1 +1,1 @@
-from .app import notify_me, notify_on_exec
+from .notifiers import notify_me, notify_on_exec
