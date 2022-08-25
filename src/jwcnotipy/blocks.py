@@ -87,7 +87,7 @@ def _success_message(
                 },
                 {
                 "type": "mrkdwn",
-                "text": f"{elapsed} seconds"
+                "text": f"{elapsed_time} seconds"
                 },
             ]
         },

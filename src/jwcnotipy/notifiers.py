@@ -32,7 +32,11 @@ _check_input(notification_name, user_id, channel) -> None:
     Checks the input provided for a given notification.
 '''
 
-def notify_me(notification_name, user_id, channel, payload = None) -> None:
+def notify_me(
+    notification_name,
+    user_id,
+    channel=environ['JWCNOTIPY_CHANNEL'],
+    payload = None) -> None:
 
     '''
     DESCRIPTION:
