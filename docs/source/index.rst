@@ -16,7 +16,7 @@ Notifications can be attached to specific functions with a handy decorator: ::
    def sum(a,b):
       return a + b
 
-   sum(a,b)
+   sum(3,1)
 
 
 .. image:: images/notipy_on_exec_success.png
@@ -26,7 +26,7 @@ Or at any other key point using notify_me: ::
 
    from jwcnotipy import notify_me
 
-   sum(a,b)
+   sum(3,1)
    notify_me(jwc_test_app, 'U037LP9TM8P')
 
 .. toctree::
@@ -35,8 +35,8 @@ Or at any other key point using notify_me: ::
    :hidden:
 
    setup
-   notifiers
-   blocks
+   modules/notifiers
+   modules/blocks
 
 The notifications are set up to post to a single channel defined by the
 JWCNOTIPY_CHANNEL environment variable, but can be sent to another specific
