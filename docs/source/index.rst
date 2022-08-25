@@ -30,8 +30,13 @@ Or at any other key point using notify_me: ::
    notify_me(jwc_test_app, 'U037LP9TM8P')
 
 .. toctree::
+   :caption: Theme Documentation
    :maxdepth: 2
-   :caption: Contents:
+   :hidden:
+
+   setup
+   notifiers
+   blocks
 
 The notifications are set up to post to a single channel defined by the
 JWCNOTIPY_CHANNEL environment variable, but can be sent to another specific
