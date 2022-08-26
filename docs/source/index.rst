@@ -32,14 +32,12 @@ Or at any other key point using notify_me: ::
 .. toctree::
    :caption: Get Started
    :maxdepth: 2
-   :hidden:
 
-   setup
+   Setup
 
 .. toctree::
    :caption: Documentation
    :maxdepth: 2
-   :hidden:
 
    modules/notifiers
    modules/blocks
