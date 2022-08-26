@@ -1,27 +1,44 @@
-$project
-========
+Welcome to jwcnotipy's documentation!
+=====================================
 
-$project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+This package was built to facillitate sending notifications to slack at runtime!
 
-Look how easy it is to use:
+Notifications can be attached to specific functions with a handy decorator: ::
 
-    import project
-    # Get your stuff done
-    project.do_stuff()
+   from jwcnotipy import notify_on_exec
 
-Features
---------
+   @notify_on_exec(jwc_test_app, 'U037LP9TM8P')
+   def sum(a,b):
+      return a + b
 
-- Be awesome
-- Make things faster
+   sum(3,1)
 
-Installation
-------------
 
-Install $project by running:
+.. image:: images/notipy_on_exec_success.png
+  :width: 600
 
-    install project
+Or at any other key point using notify_me: ::
+
+   from jwcnotipy import notify_me
+
+   sum(3,1)
+   notify_me(jwc_test_app, 'U037LP9TM8P')
+
+.. toctree::
+   :caption: Theme Documentation
+   :maxdepth: 2
+   :hidden:
+
+   setup
+   modules/notifiers
+   modules/blocks
+
+The notifications are set up to post to a single channel defined by the
+JWCNOTIPY_CHANNEL environment variable, but can be sent to another specific
+channel by setting the channel keyword argument. NOTE only the user specified
+in the function call can see the notifications! This will be extended to allow
+a set of specific users and non-ephemeralised messages in a future build.
+
 
 Contribute
 ----------

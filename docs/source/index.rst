@@ -30,11 +30,17 @@ Or at any other key point using notify_me: ::
    notify_me(jwc_test_app, 'U037LP9TM8P')
 
 .. toctree::
-   :caption: Theme Documentation
+   :caption: Get Started
    :maxdepth: 2
    :hidden:
 
    setup
+
+.. toctree::
+   :caption: Documentation
+   :maxdepth: 2
+   :hidden:
+
    modules/notifiers
    modules/blocks
 
