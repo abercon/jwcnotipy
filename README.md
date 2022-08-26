@@ -3,15 +3,15 @@ Welcome to jwcnotipy's documentation!
 
 This package was built to facillitate sending notifications to slack at runtime!
 
-Notifications can be attached to specific functions with a handy decorator: ::
+Notifications can be attached to specific functions with a handy decorator:
 
-   from jwcnotipy import notify_on_exec
+   `from jwcnotipy import notify_on_exec
 
    @notify_on_exec(jwc_test_app, 'U037LP9TM8P')
    def sum(a,b):
       return a + b
 
-   sum(3,1)
+   sum(3,1)`
 
 
 .. image:: images/notipy_on_exec_success.png
@@ -19,19 +19,10 @@ Notifications can be attached to specific functions with a handy decorator: ::
 
 Or at any other key point using notify_me: ::
 
-   from jwcnotipy import notify_me
+   `from jwcnotipy import notify_me
 
    sum(3,1)
-   notify_me(jwc_test_app, 'U037LP9TM8P')
-
-.. toctree::
-   :caption: Theme Documentation
-   :maxdepth: 2
-   :hidden:
-
-   setup
-   modules/notifiers
-   modules/blocks
+   notify_me(jwc_test_app, 'U037LP9TM8P')`
 
 The notifications are set up to post to a single channel defined by the
 JWCNOTIPY_CHANNEL environment variable, but can be sent to another specific
