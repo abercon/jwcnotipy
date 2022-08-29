@@ -45,7 +45,7 @@ def _success_message(
             "type": "header",
             "text": {
             "type": "plain_text",
-            "text": "Notification from Noddy!",
+            "text": "Notification from JWCNOTIPY!",
             }
         },
         {
@@ -128,7 +128,7 @@ def _failure_message(notification_name, failure_time, trace)->str:
             "type": "header",
             "text": {
             "type": "plain_text",
-            "text": "Notification from Noddy!",
+            "text": "Notification from JWCNOTIPY!",
             }
         },
         {
@@ -199,7 +199,7 @@ def _generic_message(notification_name, time, payload):
             "type": "header",
             "text": {
             "type": "plain_text",
-            "text": "Notification from Noddy!",
+            "text": "Notification from JWCNOTIPY!",
             }
         },
         {
@@ -221,7 +221,7 @@ def _generic_message(notification_name, time, payload):
                 },
                 {
                 "type": "mrkdwn",
-                "text": "*:clock1:  Time Failed:*"
+                "text": "*:clock1:  Time:*"
                 },
                 {
                 "type": "mrkdwn",
